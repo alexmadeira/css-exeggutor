@@ -123,19 +123,20 @@ body {
   height: 20px;
   position: absolute;
   border-radius: 50%;
-  right: 16px;
+  right: 10px;
 }
 
 .heads .left {
   z-index: 1;
   margin-right: -20px;
 }
+
 .heads .left .cheek {
   width: 70px;
   left: 50%;
   transform: translateX(-68%) rotate(12deg);
   position: relative;
-  top: 50px;
+  top: 55px;
 }
 
 .heads .left .cheek::before {
@@ -154,7 +155,44 @@ body {
   height: 9px;
   position: absolute;
   border-radius: 40%;
-  right: 10px;
+  right: 5px;
+}
+
+.heads .left .mouth {
+  height: 33px;
+  width: 54px;
+  left: 50%;
+  transform: translateX(-74%) rotate(10deg);
+  position: relative;
+  top: 49px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom: 3px solid #000000;
+}
+
+.heads .left .mouth::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 4px;
+  right: 5px;
+  bottom: -2px;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  transform: rotate(16deg);
+}
+.heads .left .mouth::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 4px;
+  left: 5px;
+  bottom: -2px;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  transform: rotate(78deg);
 }
 
 .heads .right {
@@ -172,21 +210,23 @@ body {
 
 .heads .right .eyes::before {
   content: "";
-  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
   width: 20px;
   height: 20px;
   position: absolute;
   border-radius: 50%;
   left: 16px;
+  top: -15px;
 }
 .heads .right .eyes::after {
   content: "";
-  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
   width: 20px;
   height: 20px;
   position: absolute;
   border-radius: 50%;
   right: 0px;
+  top: -15px;
 }
 
 .heads .right .cheek {
@@ -197,25 +237,29 @@ body {
   top: 50px;
 }
 
-.heads .right .cheek::before {
+.heads .right .mouth {
+  height: 15px;
+  width: 54px;
+  left: 50%;
+  transform: translateX(-22%) rotate(-11deg);
+  position: relative;
+  top: 80px;
+  border-top: 3px solid #000000;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.heads .right .mouth::before {
   content: "";
-  background-color: #fff;
-  width: 18px;
-  height: 9px;
+  width: 6px;
+  height: 6px;
   position: absolute;
-  border-radius: 40%;
+  border-radius: 4px;
   left: 5px;
+  bottom: 11px;
+  border-left: 2px solid #000000;
+  border-top: 2px solid #000000;
+  transform: rotate(33deg);
 }
-.heads .right .cheek::after {
-  content: "";
-  background-color: #fff;
-  width: 18px;
-  height: 9px;
-  position: absolute;
-  border-radius: 40%;
-  right: 10px;
-}
-
 .heads .center {
   z-index: 2;
 }
