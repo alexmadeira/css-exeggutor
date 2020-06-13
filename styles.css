@@ -126,6 +126,37 @@ body {
   right: 16px;
 }
 
+.heads .left {
+  z-index: 1;
+  margin-right: -20px;
+}
+.heads .left .cheek {
+  width: 70px;
+  left: 50%;
+  transform: translateX(-68%) rotate(12deg);
+  position: relative;
+  top: 50px;
+}
+
+.heads .left .cheek::before {
+  content: "";
+  background-color: #fff;
+  width: 18px;
+  height: 9px;
+  position: absolute;
+  border-radius: 40%;
+  left: 5px;
+}
+.heads .left .cheek::after {
+  content: "";
+  background-color: #fff;
+  width: 18px;
+  height: 9px;
+  position: absolute;
+  border-radius: 40%;
+  right: 10px;
+}
+
 .heads .right {
   z-index: 1;
   margin-left: -20px;
@@ -156,6 +187,33 @@ body {
   position: absolute;
   border-radius: 50%;
   right: 0px;
+}
+
+.heads .right .cheek {
+  width: 70px;
+  left: 50%;
+  transform: translateX(-32%) rotate(-12deg);
+  position: relative;
+  top: 50px;
+}
+
+.heads .right .cheek::before {
+  content: "";
+  background-color: #fff;
+  width: 18px;
+  height: 9px;
+  position: absolute;
+  border-radius: 40%;
+  left: 5px;
+}
+.heads .right .cheek::after {
+  content: "";
+  background-color: #fff;
+  width: 18px;
+  height: 9px;
+  position: absolute;
+  border-radius: 40%;
+  right: 10px;
 }
 
 .heads .center {
