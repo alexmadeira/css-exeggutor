@@ -409,6 +409,7 @@ body {
   border-radius: 40%;
   left: 5px;
 }
+
 .heads .center .cheek::after {
   content: "";
   background-color: #fff;
@@ -417,4 +418,38 @@ body {
   position: absolute;
   border-radius: 40%;
   right: 5px;
+}
+
+.heads .center .mouth {
+  height: 28px;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  top: 54px;
+  border-bottom: 3px solid #000000;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.heads .center .mouth::before {
+  content: "";
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  left: 18px;
+  top: 30px;
+  border: 2px solid #000000;
+  border-top: none;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: #ab0d0d;
+}
+
+.heads .center .mouth::after {
+  content: "";
+  height: 12px;
+  position: absolute;
+  left: 27px;
+  top: 30px;
+  border-left: 2px solid #000000;
 }
