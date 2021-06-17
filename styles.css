@@ -80,12 +80,26 @@ body {
 .heads {
   position: absolute;
   left: 50%;
-  top: 150px;
+  top: 50%;
   z-index: 2;
-  transform: translateX(-50%);
+  transform: translate(-50%, -55%);
   display: flex;
 }
-.heads > div {
+.heads .hair {
+  width: 500px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.heads .hair .leaf.left {
+  background-color: #83e49d;
+  height: 20px;
+}
+
+.heads > div:not(.hair) {
   background-color: #ecbc7c;
   height: 110px;
   width: 100px;
